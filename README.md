@@ -46,3 +46,34 @@ pip install -r requirements.txt
 ```
 streamlit run app.py
 ```
+##How to Use
+Enter the customer details in the input fields in the sidebar.
+
+Click on the "Predict Churn" button to get the prediction.
+
+View the churn probability, feature comparison, and retention strategy suggestion.
+
+Download the prediction results in CSV or PDF format.
+
+##Model Explanation
+The model used for churn prediction is a machine learning model, specifically a Random Forest Classifier. The model was trained on historical customer data, considering features such as customer age, tenure with the company, balance, and geographical location.
+
+##Future Improvements
+Model Improvement: Implementing hyperparameter tuning for better accuracy.
+
+Feature Engineering: Adding additional features like customer feedback, transaction history, and more.
+
+Real-time Predictions: Integrating the app with real-time data streams for live customer predictions.
+
+##Contributing
+Feel free to fork this repository and submit a pull request if you want to contribute to the project.
+
+##License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+##Acknowledgments
+Streamlit for building a simple and powerful framework for creating web applications.
+
+scikit-learn for providing machine learning tools for classification.
+
+Plotly for helping create beautiful, interactive visualizations.
