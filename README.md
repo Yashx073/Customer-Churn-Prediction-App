@@ -1,5 +1,10 @@
 # Customer-Churn-Prediction-App
 
+## Live Demo
+
+You can try the live version of the app here: [Customer Churn Prediction App]([https://your-hosted-link.com](https://customer-churn-prediction-app-yrcz.onrender.com))
+
+
 ## Overview
 
 The **Customer Churn Prediction App** is a machine learning-driven web application built using **Streamlit**. This app helps businesses predict whether a customer is likely to churn (discontinue a subscription-based service) based on their profile. By leveraging historical customer data, the model identifies at-risk customers and suggests retention strategies.
