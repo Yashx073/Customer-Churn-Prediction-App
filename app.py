@@ -24,7 +24,7 @@ with st.sidebar:
         credit_score = st.number_input('Credit Score', min_value=300, max_value=850, value=300, step=1)
         age = st.number_input('Age', min_value=18, max_value=100, value=18, step=1)
         tenure = st.number_input('Tenure (Years with Company)', min_value=0, max_value=10, value=0, step=1)
-        balance = st.number_input('Account Balance', value=None, step=100.0)
+        balance = st.number_input('Account Balance', value=0, step=100.0)
         num_of_products = st.selectbox('Number of Products', [1, 2, 3, 4], index=None)
         estimated_salary = st.number_input('Estimated Salary', value=0, step=100.0) 
         
