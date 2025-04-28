@@ -2,7 +2,8 @@
 
 ## Live Demo
 
-You can try the live version of the app here: [Customer Churn Prediction App]([https://your-hosted-link.com](https://customer-churn-prediction-app-yrcz.onrender.com))
+You can try the live version of the app here: 
+[Customer Churn Prediction App]([https://your-hosted-link.com](https://customer-churn-prediction-app-yrcz.onrender.com))
 
 
 ## Overview
