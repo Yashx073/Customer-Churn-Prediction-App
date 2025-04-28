@@ -25,24 +25,25 @@ with st.sidebar:
         age = st.number_input('Age', min_value=18, max_value=100, value=18, step=1)
         tenure = st.number_input('Tenure (Years with Company)', min_value=0, max_value=10, value=0, step=1)
         balance = st.number_input('Account Balance', min_value=0.0, value=0.0, step=100.0)
-        num_of_products = st.selectbox('Number of Products', [1, 2, 3, 4], index=None)
+        num_of_products = st.selectbox('Number of Products', ["Select...", 1, 2, 3, 4])
         estimated_salary = st.number_input('Estimated Salary', min_value=0.0, value=0.0, step=100.0)
         
     with st.expander("Customer Membership Details", expanded=False):
-        has_cr_card_input = st.selectbox('Has Credit Card?', ['Yes', 'No'], index=None)
-
-        is_active_member_input = st.selectbox('Is Active Member?', ['Yes', 'No'], index=None)
+        has_cr_card_input = st.selectbox('Has Credit Card?', ["Select...", 'Yes', 'No'])
+        is_active_member_input = st.selectbox('Is Active Member?', ["Select...", 'Yes', 'No'])
 
     with st.expander("Geographical & Gender Info", expanded=False):
-        geography = st.selectbox('Geography', ['France', 'Germany', 'Spain'], index=None)
-        gender = st.selectbox('Gender', ['Female', 'Male'], index=None)
+        geography = st.selectbox('Geography', ["Select...", 'France', 'Germany', 'Spain'])
+        gender = st.selectbox('Gender', ["Select...", 'Female', 'Male'])
 
 predict_btn = st.button('🚀 Predict Churn')
 
 if predict_btn:
-    if None in [credit_score, age, tenure, balance, num_of_products, estimated_salary, geography, gender] \
-       or has_cr_card_input is None or is_active_member_input is None:
-        st.error('⚠️ Please fill out all the fields before prediction.')
+    if (
+        num_of_products == "Select..." or has_cr_card_input == "Select..." or 
+        is_active_member_input == "Select..." or geography == "Select..." or gender == "Select..."
+    ):
+        st.error('⚠️ Please fill out all the fields properly before prediction.')
     else:
         has_cr_card = 1 if has_cr_card_input == 'Yes' else 0
         is_active_member = 1 if is_active_member_input == 'Yes' else 0
@@ -143,4 +144,4 @@ if predict_btn:
 
 st.markdown("---")
 st.markdown("<center>Made by Yash Mohadikar</center>", unsafe_allow_html=True)
-st.markdown("[<center>GitHub Repository](https://github.com/yourusername/yourproject)</center>", unsafe_allow_html=True)
+st.markdown("[<center>GitHub Repository](https://github.com/Yashx073/Customer-Churn-Prediction-App/tree/main)</center>", unsafe_allow_html=True)
